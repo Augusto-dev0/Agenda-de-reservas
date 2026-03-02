@@ -1,0 +1,530 @@
+:root {
+    --primary: #6a1b9a;
+    --primary-light: #094996e6;
+    --success: #2e7d32;
+    --danger: #f81100;
+    --warning: #ff9800;
+    --info: #f3db21;
+
+    --bg: #f1f5f9;
+    --card: #ffffff;
+    --text: #000000;
+    --border: #000000;
+    --shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Dark Mode */
+.dark-mode {
+    --bg: #1a1a1a;
+    --card: #2d2d2d;
+    --text: #f0f0f0;
+    --border: #444;
+    --shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body, .card, header, table, th, td, input, select, textarea, button {
+transition: background-color 0.4s ease,
+            color 0.4s ease,
+            border-color 0.4s ease,
+            box-shadow 0.4s ease;
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+padding:20px;
+}
+
+.container{
+width:100%;
+max-width:1100px;
+margin:auto;
+}
+
+header{
+background:var(--primary);
+color:white;
+padding:20px;
+border-radius:10px;
+margin-bottom:30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+header h1{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.container {
+    padding: 10px;
+}
+
+@media (max-width: 480px){
+
+body {
+    padding: 8px;
+}
+
+.card {
+    padding: 12px;
+}
+
+.finance-card {
+    padding: 15px;
+}
+
+}
+
+.toggle{
+background:white;
+border:none;
+padding:8px 15px;
+border-radius:20px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.card{
+background:var(--card);
+padding:20px;
+border-radius:10px;
+margin-bottom:25px;
+border:1px solid var(--border);
+}
+
+input,select,textarea{
+width:100%;
+padding:10px;
+border-radius:6px;
+border:1px solid var(--border);
+margin-top:5px;
+margin-bottom:15px;
+background:var(--card);
+color:var(--text);
+}
+
+#form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* Linha 2 organizada */
+#form select:nth-of-type(1) {
+    grid-column: 1 / 3;
+}
+
+#form select:nth-of-type(2) {
+    grid-column: 3 / 5;
+}
+
+/* Textarea ocupa tudo */
+#form textarea {
+    grid-column: 1 / -1;
+}
+
+/* Botão ocupa tudo */
+#form button {
+    grid-column: 1 / -1;
+}
+
+/* Tablet */
+@media (max-width: 992px){
+    #form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #form select:nth-of-type(1),
+    #form select:nth-of-type(2) {
+        grid-column: auto;
+    }
+}
+
+/* Celular */
+@media (max-width: 600px){
+    #form {
+        grid-template-columns: 1fr;
+    }
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.btn-primary{background:var(--primary);color:white;}
+.btn-danger{background:var(--danger);color:white;}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:12px;
+border-bottom:1px solid var(--border);
+text-align:center;
+vertical-align:middle;
+}
+
+.status{
+padding:5px 10px;
+border-radius:20px;
+font-size:0.8rem;
+font-weight:bold;
+}
+
+.confirmado{background:rgba(46,125,50,0.2);color:var(--success);}
+.pendente{background:rgba(255,152,0,0.2);color:var(--warning);}
+.finalizado{background:rgba(106,27,154,0.2);color:var(--primary);}
+
+/* PAGAMENTO */
+.pagamento{
+padding:5px 10px;
+border-radius:20px;
+font-size:0.8rem;
+font-weight:bold;
+}
+
+.pago{
+background:rgba(46,125,50,0.2);
+color:var(--success);
+}
+
+.pagamento-pendente{
+background:rgba(244,67,54,0.2);
+color:var(--danger);
+}
+
+footer{
+text-align:center;
+margin-top:40px;
+font-size:0.9rem;
+}
+
+/* Instagram */
+.footer-contact a:nth-child(1):hover {
+    color: #2303f2;
+    text-shadow: 0 0 10px rgba(5, 20, 231, 0.7);
+}
+footer .footer-contact a {
+    color: var(--text);
+    margin-left: 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+/* ===============================
+   RESPONSIVIDADE
+=================================*/
+
+@media (max-width: 768px){
+
+header{
+flex-direction:column;
+gap:15px;
+text-align:center;
+}
+
+header h1{
+font-size:1.2rem;
+justify-content:center;
+}
+
+.card{
+padding:15px;
+}
+
+header {
+    gap: 15px;
+}
+
+@media (max-width: 768px){
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .theme-toggle {
+        align-self: center;
+    }
+}
+
+
+.container {
+    padding: 10px;
+}
+
+@media (max-width: 480px){
+
+body {
+    padding: 8px;
+}
+
+.card {
+    padding: 12px;
+}
+
+.finance-card {
+    padding: 15px;
+}
+
+}
+
+/* Ajusta botões */
+button{
+padding:8px 12px;
+font-size:0.9rem;
+}
+
+button {
+    min-height: 40px;
+}
+
+@media (max-width: 480px){
+    .btn-primary {
+        width: 100%;
+    }
+}
+
+/* Painel financeiro empilhado */
+.card div[style]{
+flex-direction:column !important;
+gap:10px !important;
+}
+
+}
+
+@media (max-width: 768px) {
+
+    .painel-financeiro {
+        padding: 15px;
+    }
+
+    .cards-financeiro {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .cards-financeiro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+    .card-financeiro {
+        padding: 18px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    .card-financeiro h3 {
+        font-size: 14px;
+    }
+
+    .card-financeiro p {
+        font-size: 18px;
+    }
+}
+
+/* Telas muito pequenas */
+@media (max-width: 480px){
+
+body{
+padding:10px;
+}
+
+input,select,textarea{
+font-size:0.9rem;
+}
+
+h2{
+font-size:1.1rem;
+}
+
+}
+
+.btn-ver{
+background:#6a1b9a;
+color:white;
+border:none;
+padding:6px 10px;
+border-radius:6px;
+cursor:pointer;
+margin:2px;
+}
+
+.btn-edit{
+background:#ff9800;
+color:white;
+border:none;
+padding:6px 10px;
+border-radius:6px;
+cursor:pointer;
+margin:2px;
+}
+
+.btn-del{
+background:#f44336;
+color:white;
+border:none;
+padding:6px 10px;
+border-radius:6px;
+cursor:pointer;
+margin:2px;
+}
+
+/* Hover suave */
+button:hover{
+opacity:0.85;
+transform:scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background: var(--primary);
+    color: white;
+}
+
+th {
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+.dark-mode tbody tr:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+.finance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.finance-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+}
+
+.finance-card i {
+    font-size: 2rem;
+}
+
+.finance-card span {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.finance-card h3 {
+    margin-top: 5px;
+    font-size: 1.4rem;
+}
+
+.finance-card:hover {
+    transform: translateY(-5px);
+}
+
+/* CORES PERSONALIZADAS */
+.finance-card.recebido {
+    border-left: 6px solid #2e7d32;
+}
+
+.finance-card.pendente {
+    border-left: 6px solid #f44336;
+}
+
+.finance-card.reservas {
+    border-left: 6px solid #6a1b9a;
+}
+
+/* Toggle Moderno */
+.theme-toggle {
+    width: 60px;
+    height: 30px;
+    background: #ddd;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.toggle-circle {
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.theme-toggle i {
+    font-size: 12px;
+    color: #6a1b9a;
+}
+
+.dark-mode .theme-toggle {
+    background: #6a1b9a;
+}
+
+.dark-mode .toggle-circle {
+    transform: translateX(30px);
+}
+
+.dark-mode .theme-toggle i {
+    color: #f3db21;
+}
+
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tabela-container table {
+    min-width: 950px; /* força largura mínima */
+    border-collapse: collapse;
+}
+
+td:last-child {
+    white-space: nowrap;
+}

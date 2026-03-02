@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agenda de Reservas - Espaço Lazer</title>
+
+<!-- CSS / VINCULAÇÃO -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="shortcut icon" href="espaço.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<h1><i class="fas fa-calendar-check"></i> Agenda de Reservas - Espaço Freire</h1>
+<div class="theme-toggle" onclick="toggleDark()">
+    <div class="toggle-circle">
+        <i id="themeIcon" class="fas fa-moon"></i>
+    </div>
+</div>
+</header>
+
+<div class="card">
+<h2>Nova Reserva</h2>
+
+<form id="form">
+
+<input type="text" id="client" placeholder="Nome do Cliente" required>
+
+<input type="date" id="date" required>
+
+<input type="time" id="time" required>
+
+<input type="number" id="value" placeholder="Valor da Reserva (R$)" required>
+
+<select id="eventStatus">
+<option value="pendente">Pendente</option>
+<option value="confirmado">Confirmado</option>
+<option value="finalizado">Finalizado</option>
+</select>
+
+<select id="paymentStatus">
+<option value="Pendente">Pagamento Pendente</option>
+<option value="Pago">Pago</option>
+</select>
+
+<textarea id="obs" placeholder="Observações"></textarea>
+
+<button type="submit" class="btn-primary">
+<i class="fas fa-save"></i> Salvar Reserva
+</button>
+
+</form>
+</div>
+
+<div class="card">
+<h2>Reservas Registradas</h2>
+
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:15px;gap:10px;">
+
+    <button onclick="exportarPDF()" class="btn-primary">
+        <i class="fas fa-file-pdf"></i> Exportar PDF
+    </button>
+
+</div>
+
+<div class="tabela-container">
+    <table>
+<thead>
+<tr>
+<th>Cliente</th>
+<th>Data</th>
+<th>Hora</th>
+<th>Valor</th>
+<th>Status</th>
+<th>Pagamento</th>
+<th>Ações</th>
+</tr>
+</thead>
+<tbody id="table-body"></tbody>
+    </table>
+</div>
+
+</div>
+
+<div class="card">
+<h2>Painel Financeiro</h2>
+
+<div class="finance-grid">
+
+    <div class="finance-card recebido">
+        <i class="fas fa-check-circle"></i>
+        <div>
+            <span>Total Recebido</span>
+            <h3 id="totalRecebido">R$ 0.00</h3>
+        </div>
+    </div>
+
+    <div class="finance-card pendente">
+        <i class="fas fa-clock"></i>
+        <div>
+            <span>Total Pendente</span>
+            <h3 id="totalPendente">R$ 0.00</h3>
+        </div>
+    </div>
+
+    <div class="finance-card reservas">
+        <i class="fas fa-calendar"></i>
+        <div>
+            <span>Total de Reservas</span>
+            <h3 id="totalReservas">0</h3>
+        </div>
+    </div>
+
+</div>
+
+<br>
+
+<label>Filtrar por Mês:</label>
+<input type="month" id="filtroMes" onchange="render()">
+
+</div>
+
+
+<footer>
+Agenda de Reservas - Espaço Freire © 2026 
+
+<div class="footer-contact">
+    <!-- Instagram -->
+    <a href="https://instagram.com/espaco_freire2026" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+<footer>
+</div>
+</div>
+<!-- JAVASCRIPT / VINCULAÇÃO -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html> 
