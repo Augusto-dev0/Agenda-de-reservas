@@ -161,6 +161,16 @@ O botão de observação na tabela tem dois estados visuais:
 - Nenhum dado enviado a servidores externos
 
 ---
+## 📄 Licença
+
+![License: Proprietary](https://img.shields.io/badge/licen%C3%A7a-Propriet%C3%A1ria-red)
+
+Licença proprietária — todos os direitos reservados ao autor.
+Nenhuma permissão é concedida para uso, cópia, modificação ou distribuição deste conteúdo sem autorização prévia e por escrito.
+
+Consulte o arquivo [`LICENSE`](./LICENSE) para os termos completos.
+
+---
 
 ## 📬 Contato
 
