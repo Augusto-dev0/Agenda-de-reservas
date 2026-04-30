@@ -161,6 +161,15 @@ O botão de observação na tabela tem dois estados visuais:
 - Nenhum dado enviado a servidores externos
 
 ---
+
+## 📬 Contato
+
+**Espaço Freire**
+
+[![Instagram](https://img.shields.io/badge/Instagram-espaco__freire2026-3b82f6?style=flat-square&logo=instagram)](https://instagram.com/espaco_freire2026)
+
+---
+
 ## 📄 Licença
 
 ![License: Proprietary](https://img.shields.io/badge/licen%C3%A7a-Propriet%C3%A1ria-red)
@@ -171,16 +180,3 @@ Nenhuma permissão é concedida para uso, cópia, modificação ou distribuiçã
 Consulte o arquivo [`LICENSE`](./LICENSE) para os termos completos.
 
 ---
-
-## 📬 Contato
-
-**Espaço Freire**
-
-[![Instagram](https://img.shields.io/badge/Instagram-espaco__freire2026-3b82f6?style=flat-square&logo=instagram)](https://instagram.com/espaco_freire2026)
-
----
-
-<div align="center">
-© 2026 Espaço Freire — Todos os direitos reservados
-</div>
-	
