@@ -1,4 +1,4 @@
-# 🗓️ Espaço Freire — Agenda de Reservas
+# 🗓️ Espaço Freire · Agenda de Reservas
 
 <div align="center">
 
@@ -7,7 +7,7 @@
 ![CSS](https://img.shields.io/badge/CSS3-3b82f6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-3b82f6?style=flat-square&logo=javascript&logoColor=white)
 
-Sistema web completo de gerenciamento de reservas para o **Espaço Freire** — controle de clientes, datas, horários, pagamentos, alertas automáticos, calendário visual e geração de contratos individuais em PDF.
+Sistema web completo de gerenciamento de reservas para o **Espaço Freire** · controle de clientes, datas, horários, pagamentos, alertas automáticos, calendário visual e geração de contratos individuais em PDF.
 
 [✨ Funcionalidades](#-funcionalidades) · [🚀 Como usar](#-como-usar) · [📁 Estrutura](#-estrutura-do-projeto) · [📱 Responsividade](#-responsividade)
 
@@ -17,18 +17,18 @@ Sistema web completo de gerenciamento de reservas para o **Espaço Freire** — 
 
 ## ✨ Funcionalidades
 
-- **Cadastro completo de reservas** — cliente, data, horário, valor, status do evento e pagamento
+- **Cadastro completo de reservas** · cliente, data, horário, valor, status do evento e pagamento
 - **Edição e exclusão** de reservas com confirmação
-- **Calendário visual mensal** — dias com reserva destacados em azul, tooltip com nome do cliente e navegação entre meses
-- **Alertas proativos automáticos** — eventos próximos, pagamentos atrasados e reservas sem valor
-- **Filtros e busca em tempo real** — por nome do cliente, status do evento e status de pagamento
-- **Contrato PDF individual** — gerado por reserva com dados completos, campos de assinatura e cláusula
-- **Relatório PDF geral** — exportação de todas as reservas com resumo financeiro
-- **Painel financeiro** — total recebido, pendente e número de reservas (com filtro por mês)
-- **Indicador visual de observações** — botão com bolinha pulsante quando há observação cadastrada
-- **Modo escuro / claro** — alternância suave com preferência salva automaticamente
-- **Persistência de dados** via `localStorage` — reservas mantidas mesmo após fechar o navegador
-- **Toast de feedback** — notificação visual em todas as ações
+- **Calendário visual mensal** · dias com reserva destacados em azul, tooltip com nome do cliente e navegação entre meses
+- **Alertas proativos automáticos** · eventos próximos, pagamentos atrasados e reservas sem valor
+- **Filtros e busca em tempo real** · por nome do cliente, status do evento e status de pagamento
+- **Contrato PDF individual** · gerado por reserva com dados completos, campos de assinatura e cláusula
+- **Relatório PDF geral** · exportação de todas as reservas com resumo financeiro
+- **Painel financeiro** · total recebido, pendente e número de reservas (com filtro por mês)
+- **Indicador visual de observações** · botão com bolinha pulsante quando há observação cadastrada
+- **Modo escuro / claro** · alternância suave com preferência salva automaticamente
+- **Persistência de dados** via `localStorage` · reservas mantidas mesmo após fechar o navegador
+- **Toast de feedback** · notificação visual em todas as ações
 
 ---
 
@@ -48,11 +48,11 @@ Sistema web completo de gerenciamento de reservas para o **Espaço Freire** — 
 
 | Modo | Fundo | Superfície | Destaque |
 |---|---|---|---|
-| **Escuro** | `#0d1117` — preto-azulado | `#161b22` | Azul `#3b82f6` |
-| **Claro** | `#d8dce6` — cinza-ardósia | `#e2e6f0` | Azul `#1d4ed8` |
+| **Escuro** | `#0d1117` - preto-azulado | `#161b22` | Azul `#3b82f6` |
+| **Claro** | `#d8dce6` - cinza-ardósia | `#e2e6f0` | Azul `#1d4ed8` |
 
-- **Fonte de títulos:** Playfair Display — elegante e editorial
-- **Fonte de corpo e números:** IBM Plex Sans — limpa e profissional para dados
+- **Fonte de títulos:** Playfair Display · elegante e editorial
+- **Fonte de corpo e números:** IBM Plex Sans · limpa e profissional para dados
 - **Acento:** azul em botões, badges, calendário, barra lateral dos cards e PDFs
 
 ---
@@ -174,7 +174,7 @@ O botão de observação na tabela tem dois estados visuais:
 
 ![License: Proprietary](https://img.shields.io/badge/licen%C3%A7a-Propriet%C3%A1ria-red)
 
-Licença proprietária — todos os direitos reservados ao autor.
+Licença proprietária - todos os direitos reservados ao autor.
 Nenhuma permissão é concedida para uso, cópia, modificação ou distribuição deste conteúdo sem autorização prévia e por escrito.
 
 Consulte o arquivo [`LICENSE`](./LICENSE) para os termos completos.
